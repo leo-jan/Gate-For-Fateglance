@@ -20,6 +20,7 @@
             --text-secondary: #546e7a;
             --text-muted: #90a4ae;
             --accent: #4a90d9;
+            --accent-hover: #357abd;
             --border-color: #d5dce6;
             --shadow: 0 8px 32px rgba(74, 144, 217, 0.10);
             --radius: 16px;
@@ -94,17 +95,17 @@
         }
 
         .logo-text {
-            font-size: 42px;
+            font-size: 38px;
             font-weight: 700;
             letter-spacing: 1px;
             color: var(--text-primary);
-            margin-bottom: 4px;
+            margin-bottom: 2px;
         }
 
         .badge-portfolio {
             display: inline-block;
             margin-top: 4px;
-            padding: 4px 18px;
+            padding: 4px 20px;
             border-radius: 30px;
             font-size: 13px;
             font-weight: 500;
@@ -191,9 +192,9 @@
         }
 
         .project-card .title {
-            font-size: 20px;
+            font-size: 19px;
             font-weight: 600;
-            margin-bottom: 0;
+            margin-bottom: 4px;
         }
 
         .project-card .title .ext-link {
@@ -206,7 +207,11 @@
             border: 1px solid rgba(74, 144, 217, 0.10);
         }
 
-        /* ⚠️ 移除描述和标签，只保留标题 + 状态 */
+        .project-card .desc {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
 
         .project-card .status-badge {
             display: inline-block;
@@ -327,7 +332,7 @@
             }
 
             .logo-text {
-                font-size: 30px;
+                font-size: 28px;
             }
 
             .lang-bar {
@@ -358,7 +363,7 @@
         <!-- 头部 -->
         <header class="header">
             <div class="logo-text">Zack Leo</div>
-            <span class="badge-portfolio" data-zh="✦ 作品集 · 持续更新" data-en="✦ Portfolio · Always Evolving">
+            <span class="badge-portfolio" data-zh="✦ 持续更新" data-en="✦ Portfolio · Always Evolving">
                 ✦ 作品集 · 持续更新
             </span>
             <div class="social-row">
@@ -368,7 +373,7 @@
                 <a href="#" class="social-icon" title="LinkedIn">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
-                <a href="mailto:leo.jan@example.com" class="social-icon" title="Email">
+                <a href="mailto:291698522@qq.com" class="social-icon" title="Email">
                     <i class="fas fa-envelope"></i>
                 </a>
             </div>
@@ -377,7 +382,9 @@
         <!-- 作品列表 -->
         <div class="projects">
 
-            <!-- ===== 作品 1：施工日报系统 ===== -->
+            <!-- ============================================================
+            作品 1：施工日报系统
+            ============================================================ -->
             <a href="https://teamomiao.streamlit.app/" class="project-card" target="_blank" rel="noopener noreferrer">
                 <div class="icon-box">🏗️</div>
                 <div class="info">
@@ -387,29 +394,45 @@
                         </span>
                         <span class="ext-link">🔗</span>
                     </div>
+                    <div class="desc" data-zh="支持多用户并发录入、实时数据汇总与考勤管理"
+                         data-en="Multi‑user entry, real‑time summary, and attendance management">
+                        支持多用户并发录入、实时数据汇总与考勤管理
+                    </div>
                     <span class="status-badge status-online" data-zh="● 在线" data-en="● Online">● 在线</span>
                 </div>
                 <span class="arrow">→</span>
             </a>
 
-            <!-- ===== 作品 2：数据可视化仪表板 ===== -->
+            <!-- ============================================================
+            作品 2：数据可视化仪表板
+            ============================================================ -->
             <div class="project-card disabled">
                 <div class="icon-box">📊</div>
                 <div class="info">
                     <div class="title" data-zh="数据可视化仪表板" data-en="Data Visualization Dashboard">
                         数据可视化仪表板
                     </div>
+                    <div class="desc" data-zh="交互式图表与实时数据监控"
+                         data-en="Interactive charts and real‑time monitoring">
+                        交互式图表与实时数据监控
+                    </div>
                     <span class="status-badge status-dev" data-zh="● 开发中" data-en="● In Development">● 开发中</span>
                 </div>
                 <span class="arrow">→</span>
             </div>
 
-            <!-- ===== 作品 3：更多作品 ===== -->
+            <!-- ============================================================
+            作品 3：更多作品
+            ============================================================ -->
             <div class="project-card disabled">
                 <div class="icon-box">📝</div>
                 <div class="info">
                     <div class="title" data-zh="更多作品即将上线" data-en="More Projects Coming Soon">
                         更多作品即将上线
+                    </div>
+                    <div class="desc" data-zh="持续开发中，敬请期待..."
+                         data-en="Under development, stay tuned...">
+                        持续开发中，敬请期待...
                     </div>
                     <span class="status-badge status-coming" data-zh="● 规划中" data-en="● Planning">● 规划中</span>
                 </div>
@@ -421,16 +444,14 @@
         <!-- 底部 -->
         <footer class="footer">
             <p>
-                <span data-zh="© 2026 Zack Leo · 用" data-en="© 2026 Zack Leo · Made with">
-                    © 2026 Zack Leo · 用
+                <span data-zh="© 2026 Zack Leo · 业余独立设计" data-en="© 2026 Zack Leo · Independent Design">
+                    © 2026 Zack Leo · 业余独立设计
                 </span>
-                <span class="heart">❤</span>
-                <span data-zh="打造" data-en="Built">打造</span>
             </p>
             <div class="footer-links">
                 <a href="https://github.com/leo-jan" target="_blank">GitHub</a>
                 <span>·</span>
-                <a href="mailto:leo.jan@example.com">Email</a>
+                <a href="mailto:291698522@qq.com">Email</a>
                 <span>·</span>
                 <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">
                     <span data-zh="返回顶部" data-en="Back to Top">返回顶部</span>
