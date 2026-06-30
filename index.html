@@ -14,16 +14,16 @@
         }
 
         :root {
-            --bg-primary: #0a0e1a;
-            --bg-card: rgba(255, 255, 255, 0.03);
-            --text-primary: #e8edf5;
-            --text-secondary: rgba(200, 215, 235, 0.65);
-            --text-muted: rgba(200, 215, 235, 0.3);
-            --accent: #4a80c0;
-            --accent-light: #6a9fd8;
-            --accent-glow: rgba(74, 128, 192, 0.15);
-            --border-color: rgba(74, 128, 192, 0.12);
-            --shadow: 0 12px 48px rgba(0, 0, 0, 0.5);
+            --bg-primary: #0f1a2e;
+            --bg-card: rgba(255, 255, 255, 0.05);
+            --text-primary: #eef3fc;
+            --text-secondary: rgba(180, 210, 240, 0.8);
+            --text-muted: rgba(180, 210, 240, 0.4);
+            --accent: #5b8def;
+            --accent-light: #8ab4ff;
+            --accent-glow: rgba(91, 141, 239, 0.2);
+            --border-color: rgba(91, 141, 239, 0.15);
+            --shadow: 0 12px 48px rgba(0, 0, 0, 0.4);
             --radius: 16px;
             --transition: 0.35s cubic-bezier(0.22, 1, 0.36, 1);
         }
@@ -39,15 +39,15 @@
             padding: 30px 20px;
         }
 
-        /* 科技感背景光晕 */
+        /* 明亮蓝色光晕 */
         body::before {
             content: '';
             position: fixed;
             top: -30%;
-            left: -30%;
-            width: 80%;
-            height: 80%;
-            background: radial-gradient(ellipse, rgba(74, 128, 192, 0.06), transparent 70%);
+            left: -20%;
+            width: 70%;
+            height: 70%;
+            background: radial-gradient(ellipse, rgba(91, 141, 239, 0.10), transparent 70%);
             pointer-events: none;
             z-index: 0;
         }
@@ -56,10 +56,10 @@
             content: '';
             position: fixed;
             bottom: -30%;
-            right: -30%;
-            width: 80%;
-            height: 80%;
-            background: radial-gradient(ellipse, rgba(74, 128, 192, 0.04), transparent 70%);
+            right: -20%;
+            width: 70%;
+            height: 70%;
+            background: radial-gradient(ellipse, rgba(91, 141, 239, 0.06), transparent 70%);
             pointer-events: none;
             z-index: 0;
         }
@@ -106,7 +106,7 @@
         .lang-btn.active {
             background: var(--accent);
             border-color: var(--accent);
-            color: #0a0e1a;
+            color: #0f1a2e;
             font-weight: 600;
         }
 
@@ -117,7 +117,7 @@
         }
 
         .logo-text {
-            font-size: 38px;
+            font-size: 40px;
             font-weight: 700;
             letter-spacing: 1px;
             color: var(--text-primary);
@@ -131,8 +131,8 @@
             border-radius: 30px;
             font-size: 13px;
             font-weight: 500;
-            background: rgba(74, 128, 192, 0.10);
-            border: 1px solid rgba(74, 128, 192, 0.12);
+            background: rgba(91, 141, 239, 0.12);
+            border: 1px solid rgba(91, 141, 239, 0.15);
             color: var(--accent-light);
         }
 
@@ -151,7 +151,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: rgba(255, 255, 255, 0.02);
+            background: rgba(255, 255, 255, 0.03);
             border: 1px solid var(--border-color);
             color: var(--text-muted);
             font-size: 16px;
@@ -162,7 +162,7 @@
         .social-icon:hover {
             background: var(--accent);
             border-color: var(--accent);
-            color: #0a0e1a;
+            color: #0f1a2e;
             transform: translateY(-3px);
             box-shadow: 0 8px 24px var(--accent-glow);
         }
@@ -192,9 +192,9 @@
         }
 
         .project-card:hover {
-            border-color: rgba(74, 128, 192, 0.25);
+            border-color: rgba(91, 141, 239, 0.25);
             transform: translateY(-4px);
-            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5), 0 0 40px rgba(74, 128, 192, 0.04);
+            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4), 0 0 40px rgba(91, 141, 239, 0.06);
         }
 
         .project-card .icon-box {
@@ -205,9 +205,9 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: rgba(74, 128, 192, 0.06);
+            background: rgba(91, 141, 239, 0.08);
             border-radius: 12px;
-            border: 1px solid rgba(74, 128, 192, 0.08);
+            border: 1px solid rgba(91, 141, 239, 0.10);
         }
 
         .project-card .info {
@@ -224,11 +224,11 @@
         .project-card .title .ext-link {
             font-size: 12px;
             color: var(--text-muted);
-            background: rgba(74, 128, 192, 0.06);
+            background: rgba(91, 141, 239, 0.08);
             padding: 1px 10px;
             border-radius: 12px;
             margin-left: 8px;
-            border: 1px solid rgba(74, 128, 192, 0.08);
+            border: 1px solid rgba(91, 141, 239, 0.08);
         }
 
         .project-card .desc {
@@ -247,21 +247,21 @@
         }
 
         .status-online {
-            background: rgba(74, 200, 140, 0.10);
-            color: #5cb88a;
+            background: rgba(74, 200, 140, 0.12);
+            color: #64d4a0;
             border: 1px solid rgba(74, 200, 140, 0.10);
         }
 
         .status-dev {
-            background: rgba(200, 180, 80, 0.08);
-            color: #b0a060;
-            border: 1px solid rgba(200, 180, 80, 0.08);
+            background: rgba(255, 200, 80, 0.08);
+            color: #e8c86a;
+            border: 1px solid rgba(255, 200, 80, 0.08);
         }
 
         .status-coming {
-            background: rgba(74, 128, 192, 0.08);
+            background: rgba(91, 141, 239, 0.08);
             color: var(--accent-light);
-            border: 1px solid rgba(74, 128, 192, 0.08);
+            border: 1px solid rgba(91, 141, 239, 0.08);
         }
 
         .project-card .arrow {
@@ -304,7 +304,7 @@
         }
 
         .footer .heart {
-            color: #4a80c0;
+            color: #5b8def;
             display: inline-block;
             animation: heartbeat 1.8s ease-in-out infinite;
         }
@@ -453,8 +453,8 @@
         <!-- 底部 -->
         <footer class="footer">
             <p>
-                <span data-zh="© 2026 Zack Leo & " data-en="© 2026 Zack Leo ❤️ Kepler Miao ">
-                    
+                <span data-zh="© 2026 Zack Leo ❤️ Kepler Miao" data-en="© 2026 Zack Leo ❤️ Kepler Miao">
+                    © 2026 Zack Leo ❤️ Kepler Miao
                 </span>
             </p>
             <div class="footer-links">
