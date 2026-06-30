@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zack Leo</title>
+    <title>Fateful Glance · Zack Leo</title>
     <link rel="icon" href="https://s3.bmp.ovh/2026/07/01/5nyGYdOG.png" type="image/png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <style>
@@ -124,9 +124,19 @@
             margin-bottom: 2px;
         }
 
+        /* 微妙的小字：fateglance 的温柔嵌入 */
+        .logo-sub {
+            font-size: 12px;
+            color: var(--text-muted);
+            letter-spacing: 3px;
+            font-weight: 300;
+            margin-top: -2px;
+            opacity: 0.5;
+        }
+
         .badge-portfolio {
             display: inline-block;
-            margin-top: 4px;
+            margin-top: 6px;
             padding: 4px 20px;
             border-radius: 30px;
             font-size: 13px;
@@ -377,7 +387,8 @@
 
         <!-- 头部 -->
         <header class="header">
-            <div class="logo-text">Zack Leo</div>
+            <div class="logo-text">Fateful Glance</div>
+            <div class="logo-sub">✦ fateglance.cn ✦</div>
             <span class="badge-portfolio" data-zh="✦ 作品集 · 持续更新" data-en="✦ Portfolio · Always Evolving">
                 ✦ 作品集 · 持续更新
             </span>
@@ -481,7 +492,7 @@
             document.querySelectorAll('[data-zh][data-en]').forEach(el => {
                 el.textContent = el.dataset[lang];
             });
-            document.title = lang === 'zh' ? 'Zack Leo' : 'Zack Leo · Portfolio';
+            document.title = lang === 'zh' ? 'Fateful Glance · Zack Leo' : 'Fateful Glance · Zack Leo';
             localStorage.setItem('preferred_lang', lang);
         }
 
