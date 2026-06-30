@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zack Leo · 作品集</title>
+    <title>Zack Leo</title>
     <link rel="icon" href="https://s3.bmp.ovh/2026/07/01/5nyGYdOG.png" type="image/png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <style>
@@ -453,8 +453,8 @@
         <!-- 底部 -->
         <footer class="footer">
             <p>
-                <span data-zh="© 2026 Zack Leo · 业余独立设计" data-en="© 2026 Zack Leo · Independent Design">
-                    © 2026 Zack Leo · 业余独立设计
+                <span data-zh="© 2026 Zack Leo & " data-en="© 2026 Zack Leo ❤️ Kepler Miao ">
+                    
                 </span>
             </p>
             <div class="footer-links">
@@ -481,7 +481,7 @@
             document.querySelectorAll('[data-zh][data-en]').forEach(el => {
                 el.textContent = el.dataset[lang];
             });
-            document.title = lang === 'zh' ? 'Zack Leo · 作品集' : 'Zack Leo · Portfolio';
+            document.title = lang === 'zh' ? 'Zack Leo' : 'Zack Leo · Portfolio';
             localStorage.setItem('preferred_lang', lang);
         }
 
