@@ -4,11 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zack Leo · 作品集</title>
-    <!-- ✅ 您的自定义图标 -->
     <link rel="icon" href="https://s3.bmp.ovh/2026/07/01/5nyGYdOG.png" type="image/png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <style>
-        /* ===== 您原有的全部样式保持不变 ===== */
         * {
             margin: 0;
             padding: 0;
@@ -16,15 +14,15 @@
         }
 
         :root {
-            --bg-primary: #1a2332;
-            --bg-card: rgba(255, 255, 255, 0.06);
-            --text-primary: #f0ece4;
-            --text-secondary: rgba(240, 236, 228, 0.7);
-            --text-muted: rgba(240, 236, 228, 0.35);
-            --accent: #d4a853;
-            --accent-hover: #e8c97a;
-            --border-color: rgba(255, 255, 255, 0.06);
-            --shadow: 0 12px 48px rgba(0, 0, 0, 0.3);
+            --bg-primary: #0f1724;
+            --bg-card: rgba(255, 255, 255, 0.04);
+            --text-primary: #e8edf5;
+            --text-secondary: rgba(232, 237, 245, 0.65);
+            --text-muted: rgba(232, 237, 245, 0.3);
+            --accent: #6b7fa0;
+            --accent-hover: #8aa0c0;
+            --border-color: rgba(255, 255, 255, 0.05);
+            --shadow: 0 12px 48px rgba(0, 0, 0, 0.5);
             --radius: 16px;
             --transition: 0.35s cubic-bezier(0.22, 1, 0.36, 1);
         }
@@ -80,7 +78,7 @@
         .lang-btn.active {
             background: var(--accent);
             border-color: var(--accent);
-            color: #1a2332;
+            color: #0f1724;
             font-weight: 600;
         }
 
@@ -105,8 +103,8 @@
             border-radius: 30px;
             font-size: 13px;
             font-weight: 500;
-            background: rgba(212, 168, 83, 0.12);
-            border: 1px solid rgba(212, 168, 83, 0.15);
+            background: rgba(107, 127, 160, 0.12);
+            border: 1px solid rgba(107, 127, 160, 0.15);
             color: var(--accent);
         }
 
@@ -125,7 +123,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: rgba(255, 255, 255, 0.04);
+            background: rgba(255, 255, 255, 0.03);
             border: 1px solid var(--border-color);
             color: var(--text-muted);
             font-size: 16px;
@@ -136,9 +134,9 @@
         .social-icon:hover {
             background: var(--accent);
             border-color: var(--accent);
-            color: #1a2332;
+            color: #0f1724;
             transform: translateY(-3px);
-            box-shadow: 0 8px 24px rgba(212, 168, 83, 0.25);
+            box-shadow: 0 8px 24px rgba(107, 127, 160, 0.2);
         }
 
         /* ===== 作品卡片 ===== */
@@ -166,9 +164,9 @@
         }
 
         .project-card:hover {
-            border-color: rgba(212, 168, 83, 0.2);
+            border-color: rgba(107, 127, 160, 0.2);
             transform: translateY(-4px);
-            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5);
         }
 
         .project-card .icon-box {
@@ -179,7 +177,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: rgba(255, 255, 255, 0.04);
+            background: rgba(255, 255, 255, 0.03);
             border-radius: 12px;
             border: 1px solid var(--border-color);
         }
@@ -198,7 +196,7 @@
         .project-card .title .ext-link {
             font-size: 12px;
             color: var(--text-muted);
-            background: rgba(255, 255, 255, 0.04);
+            background: rgba(255, 255, 255, 0.03);
             padding: 1px 10px;
             border-radius: 12px;
             margin-left: 8px;
@@ -221,21 +219,21 @@
         }
 
         .status-online {
-            background: rgba(76, 175, 80, 0.12);
-            color: #81c784;
-            border: 1px solid rgba(76, 175, 80, 0.12);
+            background: rgba(100, 180, 140, 0.12);
+            color: #7ebca0;
+            border: 1px solid rgba(100, 180, 140, 0.12);
         }
 
         .status-dev {
-            background: rgba(255, 193, 7, 0.10);
-            color: #ffd54f;
-            border: 1px solid rgba(255, 193, 7, 0.10);
+            background: rgba(200, 180, 120, 0.10);
+            color: #b8a880;
+            border: 1px solid rgba(200, 180, 120, 0.10);
         }
 
         .status-coming {
-            background: rgba(212, 168, 83, 0.10);
+            background: rgba(107, 127, 160, 0.08);
             color: var(--accent);
-            border: 1px solid rgba(212, 168, 83, 0.10);
+            border: 1px solid rgba(107, 127, 160, 0.08);
         }
 
         .project-card .arrow {
@@ -278,7 +276,7 @@
         }
 
         .footer .heart {
-            color: #e57373;
+            color: #7a8a9a;
             display: inline-block;
             animation: heartbeat 1.8s ease-in-out infinite;
         }
