@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fateful Glance</title>
+    <title>Fateful Glance · 作品集</title>
     <link rel="icon" href="https://s3.bmp.ovh/2026/07/01/5nyGYdOG.png" type="image/png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <style>
@@ -277,6 +277,7 @@
         .status-dev { background: rgba(251, 191, 36, 0.12); color: #fcd34d; border: 1px solid rgba(251, 191, 36, 0.2); }
         .status-coming { background: rgba(91, 156, 255, 0.1); color: var(--accent-light); border: 1px solid rgba(91, 156, 255, 0.2); }
         .status-new { background: rgba(165, 243, 252, 0.15); color: #67e8f9; border: 1px solid rgba(165, 243, 252, 0.25); }
+        .status-disabled { background: rgba(160, 190, 240, 0.08); color: var(--text-muted); border: 1px solid rgba(160, 190, 240, 0.15); }
 
         .project-card .arrow {
             font-size: 22px;
@@ -356,61 +357,77 @@
         </header>
 
         <div class="projects">
-            <!-- 施工日报系统 -->
+            <!-- 新链接：出勤日报 & 施工日报 -->
             <div class="entry-group">
-                <a href="https://teamomiao.streamlit.app/" class="project-card" target="_blank" rel="noopener noreferrer">
+                <a href="https://ocndbrvgekv1.feishu.cn/share/base/form/shrcnZ2d8fNrL81x6Ve5oWdSWwd" class="project-card" target="_blank" rel="noopener noreferrer">
                     <div class="icon-box">📋</div>
                     <div class="info">
                         <div class="title">
-                            <span data-zh="施工日报填报系统" data-en="Daily Report System">施工日报填报系统</span>
+                            <span data-zh="出勤日报" data-en="Attendance Daily Report">出勤日报</span>
                             <span class="ext-link">🔗</span>
                         </div>
-                        <div class="desc" data-zh="多用户并发录入 · 实时数据汇总 · 智能考勤管理" 
-                             data-en="Multi-user concurrent entry · Real-time data aggregation · Intelligent attendance">
-                            多用户并发录入 · 实时数据汇总 · 智能考勤管理
+                        <div class="desc" data-zh="班组出勤 · 工种统计 · 人数填报" 
+                             data-en="Team attendance · Trade statistics · Headcount filling">
+                            班组出勤 · 工种统计 · 人数填报
                         </div>
-                        <span class="status-badge status-online" data-zh="● 在线运行" data-en="● Live">● 在线运行</span>
+                        <span class="status-badge status-online" data-zh="● 在线表单" data-en="● Live Form">● 在线表单</span>
                     </div>
                     <span class="arrow">→</span>
                 </a>
 
-                <a href="https://miao.fateglance.cn/" class="project-card" target="_blank" rel="noopener noreferrer">
-                    <div class="icon-box">🚀</div>
+                <a href="https://ocndbrvgekv1.feishu.cn/share/base/form/shrcnR0RbrGsbkNUF9ieOHGNUWF" class="project-card" target="_blank" rel="noopener noreferrer">
+                    <div class="icon-box">🚧</div>
                     <div class="info">
                         <div class="title">
-                            <span data-zh="施工日报填报系统（重构版）" data-en="Daily Report (Refactored)">施工日报填报系统（重构版）</span>
+                            <span data-zh="施工日报" data-en="Construction Daily Report">施工日报</span>
                             <span class="ext-link">🔗</span>
                         </div>
-                        <div class="desc" data-zh="全新架构 · 极致性能 · 丝滑体验" 
-                             data-en="New architecture · Ultimate performance · Smooth experience">
-                            全新架构 · 极致性能 · 丝滑体验
+                        <div class="desc" data-zh="区域·班组·位号 · 工作描述与工时" 
+                             data-en="Area · Team · Tag No. · Work description & manhours">
+                            区域·班组·位号 · 工作描述与工时
                         </div>
-                        <span class="status-badge status-new" data-zh="● 最新版本" data-en="● Latest">● 最新版本</span>
+                        <span class="status-badge status-new" data-zh="● 最新表单" data-en="● Latest Form">● 最新表单</span>
                     </div>
                     <span class="arrow">→</span>
                 </a>
             </div>
 
-            <!-- 数据可视化仪表板 -->
-            <div class="project-card disabled">
+            <!-- 数据可视化仪表板（已更新为有效链接） -->
+            <a href="https://ocndbrvgekv1.feishu.cn/share/base/dashboard/shrcnb1lvtFfLo3yoUCSPhv5QVb" class="project-card" target="_blank" rel="noopener noreferrer">
                 <div class="icon-box">📊</div>
                 <div class="info">
-                    <div class="title" data-zh="数据可视化仪表板" data-en="Data Visualization Dashboard">数据可视化仪表板</div>
+                    <div class="title">
+                        <span data-zh="数据可视化仪表板" data-en="Data Visualization Dashboard">数据可视化仪表板</span>
+                        <span class="ext-link">🔗</span>
+                    </div>
                     <div class="desc" data-zh="动态交互图表 · 实时监控大屏 · 多维度数据洞察" 
                          data-en="Dynamic interactive charts · Real-time monitoring · Multi-dimensional insights">
                         动态交互图表 · 实时监控大屏 · 多维度数据洞察
                     </div>
-                    <span class="status-badge status-dev" data-zh="● 开发中" data-en="● In Development">● 开发中</span>
+                    <span class="status-badge status-online" data-zh="● 在线仪表板" data-en="● Live Dashboard">● 在线仪表板</span>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+
+            <!-- 停用的旧项目 -->
+            <div class="project-card disabled">
+                <div class="icon-box">📋</div>
+                <div class="info">
+                    <div class="title" data-zh="施工日报填报系统（已停用）" data-en="Daily Report System (Deprecated)">施工日报填报系统（已停用）</div>
+                    <div class="desc" data-zh="此版本已停用，请使用上方新版链接" 
+                         data-en="This version is deprecated, please use the new links above">
+                        此版本已停用，请使用上方新版链接
+                    </div>
+                    <span class="status-badge status-disabled" data-zh="● 已停用" data-en="● Deprecated">● 已停用</span>
                 </div>
                 <span class="arrow">→</span>
             </div>
 
-            <!-- 更多作品 -->
             <div class="project-card disabled">
                 <div class="icon-box">🌌</div>
                 <div class="info">
                     <div class="title" data-zh="更多作品即将启航" data-en="More Creations Coming Soon">更多作品即将启航</div>
-                    <div class="desc" data-zh="持续探索 · 敬请期待..." 
+                    <div class="desc" data-zh="持续探索 · 敬请期待下一段命运的凝视" 
                          data-en="Keep exploring · Stay tuned for the next fateful glance">
                         持续探索 · 敬请期待下一段命运的凝视
                     </div>
